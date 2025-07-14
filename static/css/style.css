@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.help-feature i {
+  font-size: 3rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+

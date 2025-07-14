@@ -1,7 +1,7 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, url_for
 
-home_route = Blueprint('home', __name__)
+jc_route = Blueprint('jovem-conectado', __name__)
 
-@home_route.route('/')
-def index():
-    return render_template('index.html')
+@jc_route.route('/jovem-conectado')
+def jc():
+    return render_template('jovem-conectado.html')
