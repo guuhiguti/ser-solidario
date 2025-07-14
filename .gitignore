@@ -1,0 +1,20 @@
+# Ignorar ambientes virtuais
+.venv/
+env/
+venv/
+
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+**/__pycache__/
+
+
+# Arquivos do Poetry 
+poetry.lock
+
+# Arquivo de variáveis de ambiente
+.env
+
+# Logs
+*.log
