@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}Ser Solidário{% endblock %}</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/logo-projeto1.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav>
+        <ul>
+            <a href="{{ url_for('home.index') }}"><img src="{{ url_for('static', filename='img/logo-projeto1.png') }}" alt="Logo" class="logo"></a>
+            <a href="{{ url_for('sobre.sobre') }}">Sobre</a>
+            <a href="{{ url_for('acoes.acoes') }}">Ações</a>
+            <a href="{{ url_for('jc.jovem_conectado') }}">Jovem Conectado</a>
+            <a href="{{ url_for('contato.contato') }}">Contato</a>
+        </ul>
+    </nav>
+    
+    <main>
+        {% block conteudo %}{% endblock %}
+    </main>
+</body>
+</html>

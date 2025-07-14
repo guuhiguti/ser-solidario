@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ser Solidário</title>
-</head>
-<body>
-    Hello World!
-    
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block titulo %} Ser Solidário {% endblock %}
+
+{% block conteudo %}
+    <!-- Título e texto Breve -->
+    <h1>Transformando Vidas Através da <br><strong>SOLIDARIEDADE</strong></h1><br>
+    <p>Somos uma organização dedicada a promover ações solidárias e conectar pessoas que querem fazer a diferença na comunidade</p>
+
+    <!-- 2 Botões de "PRECISO DE AJUDA" e "QUERO COLABORAR" -->
+    <div class="botoes-container">
+        <a href="{{ url_for('home.preciso_ajuda') }}" class="botao-ajuda">PRECISO DE AJUDA</a>
+        <a href="{{ url_for('home.quero_colaborar') }}" class="botao-colab">QUERO COLABORAR</a>
+    </div>      
+
+    <!-- 3 Blocos de Informações -->
+
+    <div>Comunidade - Conectamos pessoas que querem fazer a diferença</div>
+
+    <div>Solidariedade - Promovemos ações que transformam vidas</div>    
+
+    <div>Impacto - Cada ação gera mudanças positivas reais</div>    
+{% endblock %}
+
+
+

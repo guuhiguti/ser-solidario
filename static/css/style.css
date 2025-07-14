@@ -1,12 +1,41 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
+  background-color: rgb(163, 204, 247);
+  color: #000000;
 }
 
-.help-feature i {
-  font-size: 3rem;
-  color: #1e40af;
-  margin-bottom: 1rem;
+.botoes-container {
+    display: flex;
+    gap: 15px; /* espaço entre os botões */
+    justify-content: center; /* opcional: centraliza */
+    flex-wrap: wrap; /* evita quebrar em telas pequenas */
+    margin-top: 20px;
 }
 
+.botao-ajuda {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #223ccd;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.botao-colab {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #223ccd;
+    text-decoration: none;
+    border: 2px solid #223ccd;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.logo {
+    width: 60px; /* ajuste o valor conforme desejado */
+    height: auto; /* mantém a proporção */
+    border-radius: 50%;
+}

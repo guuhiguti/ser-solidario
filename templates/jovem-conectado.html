@@ -1,41 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jovem Conectado</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
-    <h1>Jovem Conectado</h1>
+{% extends "base.html" %}
+
+{% block titulo %}Jovem Conectado{% endblock %}
+
+{% block conteudo %}
+
+<h1>Jovem Conectado</h1>
+
+<!-- Bloco de Texto -->
+<div>
+    <p>O programa Jovem Conectado foi criado especialmente para capacitar jovens de 16 a 25 anos, oferecendo ferramentas e conhecimentos para que se tornem protagonistas de mudanças positivas em suas comunidades.<p>
+    <p>Através de cursos, workshops e mentorias, desenvolvemos habilidades técnicas e socioemocionais que preparam os jovens para o mercado de trabalho e para a vida.</p>
+</div>
+
+<h2>Nossos Programas</h2>
+
+<!-- Programas Disponíveis -->
+
+<h3>Próximos Eventos</h3>
 
 
+<h3>Depoimentos</h3>
 
 
-
-
-    
-<!--    
-    <div class="help-feature">
-        <i class="fas fa-question-circle"></i>
-    </div>
-
-    <div class="help-feature">
-        <i class="fas fa-shield-alt"></i>
-    </div>
-
-    <div class="help-feature">
-        <i class="fas fa-users"></i>
-    </div>
-
-    <div class="help-feature">
-        <i class="fas fa-heart"></i>
-    </div>
--->
-
-
-
-
-</body>
-</html>
+{% endblock %}
