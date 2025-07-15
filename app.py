@@ -6,12 +6,12 @@ from routes.jc import jc_route
 from routes.contato import contato_route
 
 app = Flask(__name__)
+app.secret_key = '12345'
 
 app.register_blueprint(home_route)
 app.register_blueprint(sobre_route)
 app.register_blueprint(acoes_route)
 app.register_blueprint(jc_route)
 app.register_blueprint(contato_route)
-
 
 app.run(debug=True)

@@ -11,9 +11,10 @@
 <body>
 
     <!-- Barra de Navegação -->
-    <nav>
-        <ul>
-            <a href="{{ url_for('home.index') }}"><img src="{{ url_for('static', filename='img/logo-projeto1.png') }}" alt="Logo" class="logo"></a>
+    <nav class="navbar">
+        <a href="{{ url_for('home.index') }}"><img src="{{ url_for('static', filename='img/logo-projeto1.png') }}" alt="Logo" class="logo"></a>
+    
+        <ul class="nav-links">
             <a href="{{ url_for('sobre.sobre') }}">Sobre</a>
             <a href="{{ url_for('acoes.acoes') }}">Ações</a>
             <a href="{{ url_for('jc.jovem_conectado') }}">Jovem Conectado</a>
@@ -24,5 +25,6 @@
     <main>
         {% block conteudo %}{% endblock %}
     </main>
+
 </body>
 </html>
