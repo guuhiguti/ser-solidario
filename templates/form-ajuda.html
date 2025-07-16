@@ -59,7 +59,7 @@
 
                 <label for="bairro">Bairro:</label>
                 <select name="bairro" id="bairro" required>
-                    <option value="" disabled selected>Clique AQUI e selecione</option>
+                    <option value="" disabled selected hidden>Clique AQUI e selecione</option>
                     <option value="jardim rosalia">Jardim Rosália 4</option>
                     <option value="chico amaral">Chico Amaral</option>
                     <option value="parque universal">Parque Universal</option>
@@ -76,6 +76,7 @@
 
     </div>
 
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 
 
 {% endblock %}
