@@ -4,31 +4,78 @@
 
 {% block conteudo %}
 
-       <h1> Preciso de Ajuda </h1>
+       <h2> Preciso de Ajuda </h2>
 
     <!-- Bloco de Texto Informativo -->
 
-    <div>
-        <p>Estamos aqui para ajudar você! Preencha o formulário abaixo com suas informações e descreva como podemos apoiá-lo. Nossa equipe analisará sua solicitação e entrará em contato o mais breve possível.</p>
+    <div class="container-info">
+        <p>Estamos aqui para ajudar você! Preencha o formulário abaixo com suas informações e descreva como podemos apoiá-lo. Nossa equipe analisará sua solicitação e entrará em contato o mais breve possível.</p><br>
 
-        <p>Todas as informações são tratadas com total confidencialidade e respeito.</p>
+        <p><small>Todas as informações são tratadas com total confidencialidade e respeito.</small></p>
     </div>
 
     <!-- 3 blocos de Texto Informtativo -->
+    <div class="info-boxes">
+        <div class="info-box">
+            <h4>Confidencial</h4>
+            
+            Suas informações são protegidas e tratadas com sigilo
+        </div>
 
-    <div>
-        Confidencial - Suas informações são protegidas e tratadas com sigilo
-    </div>
+        <div class="info-box">
+            <h4>Suporte Humano</h4>
+            
+            Nossa equipe está preparada para acolher e orientar
+        </div>
 
-    <div>
-        Suporte Humano - Nossa equipe está preparada para acolher e orientar
-    </div>
+        <div class="info-box">
+            <h4>Sem Julgamentos</h4>
 
-    <div>
-        Sem Julgamentos - Oferecemos apoio com empatia e compreensão
+            Oferecemos apoio com empatia e compreensão
+        </div>
     </div>
     
     <!-- Formulário de Solicitações -->
+
+    <div class="container">
+    
+        <h3>Formulário de Ajuda</h3><br>
+
+            <form action="POST">
+
+                <div class="info">
+                    <p>Este formulário é destinado às famílias cadastradas no Instituto Ser Solidário que necessitam de apoio nas áreas de alimentação, vestuário, saúde, educação e trabalho.</p><br>
+                    <p>Nosso objetivo é conhecer melhor a realidade de cada família para que possamos, dentro das nossas possibilidades, buscar formas de ajudar. Preencher o formulário não garante o atendimento imediato da solicitação, mas é um passo importante para entendermos as necessidades e organizarmos nossas ações com responsabilidade e justiça.</p><br>
+                    <p>Pedimos que todas as informações sejam preenchidas com clareza, sinceridade e o máximo de detalhes possíveis. Isso nos ajuda a identificar as situações mais urgentes e a planejar as formas de apoio de maneira mais eficiente.</p><br>
+                    <p>Agradecemos pela confiança e compreensão.<br>Aguarde o contato da nossa equipe!</p><br>
+                </div>
+
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                
+
+                <label for="whatsapp">WhatsApp:</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(99) 99999-9999" pattern="\(\d{2}) \d{5}-\d{4}" inputmode="numeric" required><br><br>
+
+                <label for="bairro">Bairro:</label>
+                <select name="bairro" id="bairro" required>
+                    <option value="" disabled selected>Clique AQUI e selecione</option>
+                    <option value="jardim rosalia">Jardim Rosália 4</option>
+                    <option value="chico amaral">Chico Amaral</option>
+                    <option value="parque universal">Parque Universal</option>
+                </select> <br><br>
+
+                <label for=""></label>
+
+
+            </form>
+
+
+
+
+
+    </div>
+
 
 
 {% endblock %}

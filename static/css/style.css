@@ -6,8 +6,9 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(163, 204, 247);
-  color: #ffffff;
+  color: #122eaa;
+  background: linear-gradient(to right, rgb(163, 204, 247), #67aef6);
+
 }
 
 .botoes-container {
@@ -16,16 +17,16 @@ body {
     justify-content: center; /* opcional: centraliza */
     flex-wrap: wrap; /* evita quebrar em telas pequenas */
     margin-top: 20px;
+
 }
 
 .botao-ajuda {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #223ccd;
+    background-color: #122eaa;
     color: white;
     text-decoration: none;
     border: none;
-    border-radius: 25px;
     font-weight: bold;
 }
 
@@ -33,18 +34,25 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
-    color: #223ccd;
+    color: #122eaa;
     text-decoration: none;
     border: 2px solid #223ccd;
-    border-radius: 25px;
     font-weight: bold;
 }
 
+.botao-ajuda, .botao-colab {
+    margin-top: 50px;
+    padding: 15px 30px; /* aumenta o espaço vertical e horizontal */
+    font-size: 25px;    /* aumenta o tamanho da fonte */
+    border-radius: 30px;
+}
+
+
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  background-color: #3d99fbdb;
+  background-color: #a7cef7;
   padding: 3px 30px;
   flex-wrap: wrap;
   height: 60px; /* Altura fixa da barra */
@@ -55,20 +63,27 @@ body {
   height: 50px;   /* Ajuste o tamanho da imagem */
   width: auto;
   object-fit: contain; /* Garante que não distorça */
+  
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 5px;
   flex-wrap: wrap;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: white;
+  color: #192c9a;
   font-weight: bold;
   transition: color 0.3s;
+  font-size: 1.2em; /* Tamanho da fonte */
+  padding: 10px 15px; /* Espaçamento interno */
+  font-size: 1.5em;
+  text-align: right;
+
+
 }
 
 .nav-links a:hover {
@@ -84,9 +99,80 @@ body {
   .nav-links {
     flex-direction: column;
     width: 100%;
-    text-align: center;
+    text-align: right;
     margin-top: 10px;
   }
 }
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #bedefa;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    color: #122eaa;
+    margin-top: 100px;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    color: #122eaa;
+    text-align: center;
+    margin-left: 600px;
+    max-width: 700px;
+    margin-top: 25px;
+}
+
+.info {
+    color: #122eaa;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+label {
+  color: #122eaa;
+  
+
+}
+
+.container-info {
+  color:#122eaa;
+  text-align: justify; 
+  max-width: 900px;
+  margin: 50px auto;
+  background: #bedefa;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* NOVO: Container para alinhar lado a lado */
+.info-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* espaçamento entre os blocos */
+  flex-wrap: wrap; /* faz empilhar em telas menores */
+  margin-top: 30px;
+}
+
+/* NOVO: Blocos de informação */
+.info-box {
+  color: #122eaa;
+  text-align: center; 
+  max-width: 200px;
+  background: #bedefa;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 
