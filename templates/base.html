@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/logo-projeto1.png') }}" type="image/x-icon">
+    <title>{% block titulo %}Ser Solidário{% endblock %}</title>
+
+</head>
+<body>
+
+    <!-- Barra de Navegação -->
+    <nav>    
+        <ul>
+            <a href="">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Ações</a>
+            <a href="#">Jovem Conectado</a>
+            <a href="#">Contato</a>
+        </ul>
+    </nav>
+    
+    <main>
+        {% block conteudo %}{% endblock %}
+    </main>
+
+
+
+</body>
+</html>
